@@ -19,7 +19,7 @@
 </script>
 <main>
 	<h1>Sérieusement ^^</h1>
-	<h3>Sérieusement ^^</h3>
+	<h3>haha on me l avait pas sortie celle la depuis loooongtemps 🙂</h3>
 	<p>Qu'est ce que vous n'etes pas ? </p><input type="text" bind:value={subject} placeholder="Sujet"/>
 	<p>haha on me l avait pas sortie celle la depuis loooongtemps 🙂</p>
 	<input type="text" bind:value={action1} placeholder="Action 1"/>
