@@ -29,11 +29,11 @@
 	<p>Qu'est ce que les rageux recherchent ? </p>
 	<input type="text" bind:value={search1} placeholder="Recherche 1"/>
 	<input type="text" bind:value={search2} placeholder="Recherche 2"/>
-	<p>Qu'est ce que vous avez n'avez pas plus que vos 11 meilleurs amis ? </p>
+	<p>Qu'est ce que vous n'avez pas plus que vos 11 meilleurs amis ? </p>
 	<input type="text" bind:value={has1}/>
-	<p>Qu'est ce que vous avez avez de plus que vos 11 meilleurs amis ? </p>
+	<p>Qu'est ce que vous avez de plus que vos 11 meilleurs amis ? </p>
 	<input type="text" bind:value={has2}/>
-	<p>Qu'est ce que vous vos 11 meilleurs amis commentent notamment ? </p>
+	<p>Qu'est ce que vos 11 meilleurs amis commentent notamment ? </p>
 	<input type="text" bind:value={comment} placeholder="Commentaire instagram" />
 	<br>
 	<button class="btn" on:click={calculate}> Générer </button>
