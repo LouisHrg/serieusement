@@ -19,8 +19,9 @@
 </script>
 <main>
 	<h1>Sérieusement ^^</h1>
+	<h3>Sérieusement ^^</h3>
 	<p>Qu'est ce que vous n'etes pas ? </p><input type="text" bind:value={subject} placeholder="Sujet"/>
-	<p>Qu'est ce que vous faites alors ? (que des verbes)</p>
+	<p>haha on me l avait pas sortie celle la depuis loooongtemps 🙂</p>
 	<input type="text" bind:value={action1} placeholder="Action 1"/>
 	<input type="text" bind:value={action2} placeholder="Action 2"/>
 	<input type="text" bind:value={action3} placeholder="Action 3"/>
