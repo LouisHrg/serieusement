@@ -17,6 +17,9 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "milligram": "^1.4.1",
+    "normalize.css": "^8.0.1",
+    "postcss": "^8.4.12",
     "sirv-cli": "^1.0.0"
   }
 }

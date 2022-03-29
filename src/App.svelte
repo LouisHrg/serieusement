@@ -1,4 +1,6 @@
 <script>
+	import "milligram/dist/milligram.min.css";
+
 	export let subject;
 	export let action1;
 	export let action2;
@@ -18,49 +20,38 @@
 	}
 </script>
 <main>
-	<h1>Sérieusement ^^</h1>
-	<h3>haha on me l avait pas sortie celle la depuis loooongtemps 🙂</h3>
-	<p>Qu'est ce que vous n'etes pas ? </p><input type="text" bind:value={subject} placeholder="Sujet"/>
-	<p>Qu'est ce que vous faites alors ? (que des verbes)</p>
-	<input type="text" bind:value={action1} placeholder="Action 1"/>
-	<input type="text" bind:value={action2} placeholder="Action 2"/>
-	<input type="text" bind:value={action3} placeholder="Action 3"/>
-	<input type="text" bind:value={action4} placeholder="Action 4"/>
-	<p>Qu'est ce que les rageux recherchent ? </p>
-	<input type="text" bind:value={search1} placeholder="Recherche 1"/>
-	<input type="text" bind:value={search2} placeholder="Recherche 2"/>
-	<p>Qu'est ce que vous n'avez pas plus que vos 11 meilleurs amis ? </p>
-	<input type="text" bind:value={has1}/>
-	<p>Qu'est ce que vous avez de plus que vos 11 meilleurs amis ? </p>
-	<input type="text" bind:value={has2}/>
-	<p>Qu'est ce que vos 11 meilleurs amis commentent notamment ? </p>
-	<input type="text" bind:value={comment} placeholder="Commentaire instagram" />
-	<br>
-	<button class="btn" on:click={calculate}> Générer </button>
-	<p>Pavé : </p>
-	{#if result}
-	<p> { result } </p>
-	{/if}
+	<div class="container">
+		<h1>Sérieusement ^^</h1>
+		<h3>haha on me l avait pas sortie celle la depuis loooongtemps 🙂</h3>
+		<div class="row">
+			<div class="column">
+				<p>Qu'est ce que vous n'etes pas ? </p>
+				<input type="text" bind:value={subject} placeholder="Sujet"/>
+			</div>
+		</div>
+		<p style="margin-top: 20px; margin-bottom: 0">Qu'est ce que vous faites alors ? (que des verbes)</p>
+		<div class="row">
+			<input class="column" style="margin:10px" type="text" bind:value={action1} placeholder="Action 1"/>
+			<input class="column" style="margin:10px" type="text" bind:value={action2} placeholder="Action 2"/>
+			<input class="column" style="margin:10px" type="text" bind:value={action3} placeholder="Action 3"/>
+			<input class="column" style="margin:10px" type="text" bind:value={action4} placeholder="Action 4"/>
+		</div>
+		<p style="margin-top: 20px; margin-bottom: 0">Qu'est ce que les rageux recherchent ? </p>
+		<div class="row">
+			<input class="column" style="margin:10px" type="text" bind:value={search1} placeholder="Recherche 1"/>
+			<input class="column" style="margin:10px" type="text" bind:value={search2} placeholder="Recherche 2"/>
+		</div>
+		<p style="margin-top: 20px; margin-bottom: 0">Qu'est ce que vous n'avez pas plus que vos 11 meilleurs amis ? </p>
+		<input type="text" style="margin:10px" bind:value={has1}/>
+		<p style="margin-top: 20px; margin-bottom: 0">Qu'est ce que vous avez de plus que vos 11 meilleurs amis ? </p>
+		<input type="text" style="margin:10px" bind:value={has2}/>
+		<p style="margin-top: 20px; margin-bottom: 0">Qu'est ce que vos 11 meilleurs amis commentent notamment ? </p>
+		<input type="text" style="margin:10px" bind:value={comment} placeholder="Commentaire instagram" />
+		<br>
+		<button class="btn" style="width:100%; margin-top:20px; margin-bottom: 10px" on:click={calculate}> Générer </button>
+		<p style="text-align: center;">Résultat : </p>
+		{#if result}
+		<p> { result } </p>
+		{/if}
+	</div>
 </main>
-
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
