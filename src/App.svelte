@@ -24,28 +24,28 @@
 			<div class="column">
 			<div class="row">
 				<div class="column">
-					<p>Qu'est ce que vous n'etes pas ? </p>
-					<input type="text" bind:value={subject} placeholder="Sujet"/>
+					<label for="subject">Qu'est ce que vous n'etes pas ? </label>
+					<input id="subject" type="text" bind:value={subject} placeholder="Sujet"/>
 				</div>
 			</div>
-			<p style="margin-top: 20px; margin-bottom: 0">Qu'est ce que vous faites alors ? (que des verbes)</p>
+			<label for="action1" style="margin-top: 20px; margin-bottom: 0">Qu'est ce que vous faites alors ? (que des verbes)</p>
 			<div class="row">
-				<input class="column" style="margin:10px" type="text" bind:value={action1} placeholder="Action 1"/>
+				<input id="action1" class="column" style="margin:10px" type="text" bind:value={action1} placeholder="Action 1"/>
 				<input class="column" style="margin:10px" type="text" bind:value={action2} placeholder="Action 2"/>
 				<input class="column" style="margin:10px" type="text" bind:value={action3} placeholder="Action 3"/>
 				<input class="column" style="margin:10px" type="text" bind:value={action4} placeholder="Action 4"/>
 			</div>
-			<p style="margin-top: 20px; margin-bottom: 0">Qu'est ce que les rageux recherchent ? </p>
+			<label for="search1" style="margin-top: 20px; margin-bottom: 0">Qu'est ce que les rageux recherchent ? </p>
 			<div class="row">
-				<input class="column" style="margin:10px" type="text" bind:value={search1} placeholder="Recherche 1"/>
+				<input id="search1" class="column" style="margin:10px" type="text" bind:value={search1} placeholder="Recherche 1"/>
 				<input class="column" style="margin:10px" type="text" bind:value={search2} placeholder="Recherche 2"/>
 			</div>
-			<p style="margin-top: 20px; margin-bottom: 0">Qu'est ce que vous n'avez pas plus que vos 11 meilleurs amis ? </p>
-			<input type="text" style="margin:10px" bind:value={has1}/>
-			<p style="margin-top: 20px; margin-bottom: 0">Qu'est ce que vous avez de plus que vos 11 meilleurs amis ? </p>
-			<input type="text" style="margin:10px" bind:value={has2}/>
-			<p style="margin-top: 20px; margin-bottom: 0">Qu'est ce que vos 11 meilleurs amis commentent notamment ? </p>
-			<input type="text" style="margin:10px" bind:value={comment} placeholder="Commentaire instagram" />
+			<label for="has1" style="margin-top: 20px; margin-bottom: 0">Qu'est ce que vous n'avez pas plus que vos 11 meilleurs amis ? </p>
+			<input id="has1" type="text" style="margin:10px" bind:value={has1}/>
+			<label for="has2" style="margin-top: 20px; margin-bottom: 0">Qu'est ce que vous avez de plus que vos 11 meilleurs amis ? </p>
+			<input id="has2" type="text" style="margin:10px" bind:value={has2}/>
+			<label for="comment"  style="margin-top: 20px; margin-bottom: 0">Qu'est ce que vos 11 meilleurs amis commentent notamment ? </p>
+			<input id="comment" type="text" style="margin:10px" bind:value={comment} placeholder="Commentaire instagram" />
 		</div>
 		<div class="column">
 			<div style="font-size:20px;margin:20px 50px;text-align: justify;">
